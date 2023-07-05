@@ -1,30 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <BlogArt />
+    <FooterComp />
+    <HeaderComp />
 
   </div>
 </template>
 
 <script>
 
-import BlogArt from './components/BlogArt.vue';
+//import BlogArt from './components/BlogArt.vue';
+import FooterComp from './components/FooterComp.vue';
+import HeaderComp from './components/HeaderComp.vue';
+
 
 export default {
   name: 'App',
   components: {
-    BlogArt
+    // BlogArt
+    FooterComp,
+    HeaderComp
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>

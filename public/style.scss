@@ -38,41 +38,6 @@ h3 {
     padding-right: calc(50% - 600px);
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 53px;
-    margin-bottom: 57px;
-
-    &__title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 125%;
-        color: $colorHeading;
-        margin-left: 10px;
-
-    }
-
-    &__nav {
-        width: 243px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__link {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 125%;
-        color: $colorHeading;
-    }
-
-}
-
 .started {
 
     &__block {
@@ -406,44 +371,7 @@ h3 {
     }
 }
 
-.footer {
-    margin-top: 96px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 134px;
 
-    &__item {
-        max-width: 393px;
-
-        &__text {
-            color: $colorParagraph;
-            font-size: 22px;
-            line-height: 150%;
-            letter-spacing: 0.22px;
-            margin-top: 18px;
-        }
-
-        &__heading {
-            color: $colorHeading;
-            font-size: 25px;
-            line-height: 125%;
-            margin-bottom: 10px;
-        }
-
-        &__list__li {
-            color: $colorParagraph;
-            font-size: 22px;
-            line-height: 300%;
-            letter-spacing: 0.22px;
-            list-style-type: none;
-        }
-    }
-
-    &__contacts {
-        width: 258px;
-    }
-}
 
 .blogbanner {
     height: 356px;

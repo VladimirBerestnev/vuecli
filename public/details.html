@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Blog details</title>
+</head>
+
+<body>
+
+    <header class="header center">
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
+                <span class="header__title">Interno</span></a></div>
+        <nav class="header__nav">
+            <a href="index.html" class="header__link">Home</a>
+            <a href="#" class="header__link">Project</a>
+            <a href="#" class="header__link">Blog</a>
+        </nav>
+    </header>
+
+    <section class="blogbanner__details center">
+
+    </section>
+
+    <section class="center">
+        <div class="details" id="app">
+
+
+
+            <div class="details__tags">
+                <h3 class="details__tags__heading">Tags</h3>
+                <div class="details__tags__box">
+
+                    <label class="details__tags__label"><input @click="sorttag('bedroom')" type="radio"
+                            name="tag">Bedroom</label>
+                    <label class="details__tags__label"><input @click="sorttag('kitchan')" type="radio"
+                            name="tag">Kitchan</label>
+                    <label class="details__tags__label"><input @click="sorttag('bathroom')" type="radio"
+                            name="tag">Bathroom</label>
+                    <label class="details__tags__label"><input @click="sorttag('architectura')" type="radio"
+                            name="tag">Architectura</label>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="component.js"></script>
+    <script>
+
+        new Vue({
+            el: '#app',
+            data: {
+                blogarts: dataEl,
+                newblog: dataEl,
+                itemtag: ''
+            },
+            methods: {
+                sorttag(tag) {
+
+                    return this.blogarts = this.newblog.filter(item => {
+                        if (item.tags.includes(tag)) return item;
+
+                    });
+                }
+            },
+
+        })
+
+
+    </script>
+
+    <footer class="footer center">
+
+        <div class="footer__item">
+            <div class="logo"><img src="img/logo.png" alt="logo"><span class="header__title">Interno</span>
+                <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.
+                </p>
+            </div>
+        </div>
+        <div class="footer__item footer__contacts">
+            <h3 class="footer__item__heading">Pages</h3>
+            <ul class="footer__item__list">
+                <li class="footer__item__list__li"><a href="index.html">Home</a></li>
+                <li class="footer__item__list__li"><a href="#">Project</a></li>
+                <li class="footer__item__list__li"><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer__item footer__contacts">
+            <h3 class="footer__item__heading">Contact</h3>
+            <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="footer__item__text">contact@interno.com</p>
+            <p class="footer__item__text">(123) 456 - 7890</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

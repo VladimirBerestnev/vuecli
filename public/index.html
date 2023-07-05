@@ -2,106 +2,210 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="data.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Blog details</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <title>Main</title>
 </head>
 
 <body>
 
-    <header class="header center">
-        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
-                <span class="header__title">Interno</span></a></div>
-        <nav class="header__nav">
-            <a href="index.html" class="header__link">Home</a>
-            <a href="#" class="header__link">Project</a>
-            <a href="#" class="header__link">Blog</a>
-        </nav>
-    </header>
+  <header class="header center">
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
+        <span class="header__title">Interno</span></a></div>
+    <nav class="header__nav">
+      <a href="index.html" class="header__link">Home</a>
+      <a href="#" class="header__link">Project</a>
+      <a href="#" class="header__link">Blog</a>
+    </nav>
+  </header>
 
-    <section class="blogbanner__details center">
+  <section class="started center">
+    <div class="started__block">
+      <div class="started__block__text">
+        <h1 class="started__block__h1">Let Your Home Be Unique</h1>
+        <p class="started__block__p">There are many variations of the passages of lorem Ipsum fromavailable,
+          majority.</p>
+        <a href="#" class="started__block__link">Get Started <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <section class="projects center">
+    <div class="projects__heading">
+      <h1 class="projects__heading__h1">Follow Our Projects</h1>
+      <p class="projects__heading__p">It is a long established fact that a reader will be distracted by the of
+        readable content of page lookings at its layouts points.</p>
+    </div>
 
-    <section class="center">
-        <div class="details" id="app">
+    <div class="projects__items">
+      <div class="projects__items__block">
+        <img class="projects__items__img projects__items__img-1" src="img/projects-1.jpg" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
 
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
 
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-2.jpg" class="projects__items__img projects__items__img-2" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
 
-            <div class="details__tags">
-                <h3 class="details__tags__heading">Tags</h3>
-                <div class="details__tags__box">
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
 
-                    <label class="details__tags__label"><input @click="sorttag('bedroom')" type="radio"
-                            name="tag">Bedroom</label>
-                    <label class="details__tags__label"><input @click="sorttag('kitchan')" type="radio"
-                            name="tag">Kitchan</label>
-                    <label class="details__tags__label"><input @click="sorttag('bathroom')" type="radio"
-                            name="tag">Bathroom</label>
-                    <label class="details__tags__label"><input @click="sorttag('architectura')" type="radio"
-                            name="tag">Architectura</label>
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-3.jpg" class="projects__items__img projects__items__img-3" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
 
-                </div>
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-4.jpg" class="projects__items__img projects__items__img-4" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__heading">Modern Kitchan</h3>
+            <p class="projects__items__text">Decor / Artchitecture</p>
+          </div>
+
+          <div class="projects__circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <section class="numbers">
+    <div class="numbers__box  center">
+      <div class="numbers__item">
+        <h1 class="numbers__item__title">12</h1>
+        <p class="numbers__item__text">Years Of Experiance</p>
+      </div>
+      <div class="numbers__item">
+        <h1 class="numbers__item__title">85</h1>
+        <p class="numbers__item__text">Success Project</p>
+      </div>
+      <div class="numbers__item">
+        <h1 class="numbers__item__title">15</h1>
+        <p class="numbers__item__text">Active Project</p>
+      </div>
+      <div class="numbers__item">
+        <h1 class="numbers__item__title">95</h1>
+        <p class="numbers__item__text">Happy CUstomers</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="news center">
+
+    <div class="news__title">
+      <h2 class="news__title__heading">Articles & News</h2>
+      <p class="news__title__text">It is a long established fact that a reader will be distracted by the of
+        readable content of a page when lookings at its layouts the points of using.</p>
+    </div>
+    <div class="news__box" id="app-main">
+
+      <div v-for="index in 3">
+        <article class="news__box__item">
+          <a :href="products[index-1].link" class="news__box__item__link">
+            <div class="news__box__item__imgbox">
+              <img class="news__box__item__img" :src="products[index-1].img" alt="">
+              <p class="news__box__item__desc">{{ products[index-1].desc }}</p>
+
             </div>
-        </div>
-    </section>
-    <script src="component.js"></script>
-    <script>
-
-        new Vue({
-            el: '#app',
-            data: {
-                blogarts: dataEl,
-                newblog: dataEl,
-                itemtag: ''
-            },
-            methods: {
-                sorttag(tag) {
-
-                    return this.blogarts = this.newblog.filter(item => {
-                        if (item.tags.includes(tag)) return item;
-
-                    });
-                }
-            },
-
-        })
+            <h3 class="news__box__item__title">{{ products[index-1].title }}</h3>
+            <div class="news__box__item__databox">
+              <p class="news__box__item__databox__text">{{ products[index-1].dataTime }} </p>
+              <div class="news__circle">
+                <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="26" cy="26.2671" r="26" fill="#F4F0EC" />
+                  <path d="M23.7715 32.9529L29.7144 26.2672L23.7715 19.5815" stroke="#292F36" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
 
-    </script>
-
-    <footer class="footer center">
-
-        <div class="footer__item">
-            <div class="logo"><img src="img/logo.png" alt="logo"><span class="header__title">Interno</span>
-                <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.
-                </p>
+              </div>
             </div>
-        </div>
-        <div class="footer__item footer__contacts">
-            <h3 class="footer__item__heading">Pages</h3>
-            <ul class="footer__item__list">
-                <li class="footer__item__list__li"><a href="index.html">Home</a></li>
-                <li class="footer__item__list__li"><a href="#">Project</a></li>
-                <li class="footer__item__list__li"><a href="#">Blog</a></li>
-            </ul>
-        </div>
-        <div class="footer__item footer__contacts">
-            <h3 class="footer__item__heading">Contact</h3>
-            <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
-            <p class="footer__item__text">contact@interno.com</p>
-            <p class="footer__item__text">(123) 456 - 7890</p>
-        </div>
+          </a>
+        </article>
+      </div>
+    </div>
 
-    </footer>
+  </section>
+
+  <script>
+
+    new Vue({
+      el: '#app-main',
+      data: {
+        products: dataEl
+      }
+    })
+
+  </script>
+  <div id="app"></div>
+
 
 </body>
 
