@@ -1,5 +1,5 @@
 <template>
-    <div v-for="blogart in blogarts" :key="blogart.id" :title="blogart.title" :datatime="blogart.datatime"
+    <!--<div v-for="blogart in blogarts" :key="blogart.id" :title="blogart.title" :datatime="blogart.datatime"
         :img="blogart.img" :link="blogart.link" :tags="blogart.tags" :text="blogart.text">
 
 
@@ -15,22 +15,20 @@
                 <div class="details__article__tag" v-for="tag in tags">{{ tag }}</div>
             </div>
         </div>
-    </div>
+    </div>-->
 </template>
 
 
 <script>
 
-import dataEl from 'components.js';
+//import dataEl from 'components.js';
 
 export default {
-    name: 'BlogArt',
-    props: [
-        title, img, datatime, text, tags
-    ],
+    //  name: 'BlogArt',
+    //   props: [title, img, datatime, text, tags],
     data() {
         return {
-            blogarts: dataEl,
+            //  blogarts: dataEl,
         }
     },
 }

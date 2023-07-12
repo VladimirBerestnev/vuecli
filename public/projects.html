@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <title>Projects</title>
+</head>
+
+<body>
+
+  <header class="header center">
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
+        <span class="header__title">Interno</span></a></div>
+    <nav class="header__nav">
+      <a href="index.html" class="header__link">Home</a>
+      <a href="#" class="header__link">Project</a>
+      <a href="#" class="header__link">Blog</a>
+    </nav>
+  </header>
+
+  <section class="projectgbanner center">
+    <div class="blogbanner__heading">
+      <h1 class="blogbanner__title">Our Project</h1>
+      <div class="blogbanner__breadcrumbs">
+        <a href="index.html" class="blogbanner__breadcrumbs__link">Home</a>
+        <a href="blog.html" class="blogbanner__breadcrumbs__link">Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projbox center" id="app1">
+
+    <div class="projbox__tags">
+
+      <div class="projbox__tags__box">
+
+        <label class="projbox__tags__label"><input @click="sorttag('bedroom')" type="radio" name="tag">Bedroom</label>
+        <label class="projbox__tags__label"><input @click="sorttag('kitchan')" type="radio" name="tag">Kitchan</label>
+        <label class="projbox__tags__label"><input @click="sorttag('bathroom')" type="radio" name="tag">Bathroom</label>
+        <label class="projbox__tags__label"><input @click="sorttag'architectura')" type="radio"
+            name="tag">Architectura</label>
+
+      </div>
+    </div>
+
+
+    <div class="projects__items">
+      <div class="projects__items__block">
+        <img class="projects__items__img" src="img/projects-1.jpg" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
+
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-2.jpg" class="projects__items__img" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
+
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-3.jpg" class="projects__items__img" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__h3">Modern Kitchan</h3>
+            <p class="projects__items_p">Decor / Artchitecture</p>
+          </div>
+
+          <div class="projects_items_circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+      <div class="projects__items__block">
+        <img src="img/projects-4.jpg" class="projects__items__img" alt="">
+        <div class="projects__items__titlebox">
+          <div class="projects__items__textbox">
+            <h3 class="projects__items__heading">Modern Kitchan</h3>
+            <p class="projects__items__text">Decor / Artchitecture</p>
+          </div>
+
+          <div class="projects__circle">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="&#62;">
+                <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
+                <path id="Vector" d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <script src="component.js"></script>
+  <script>
+
+    new Vue({
+      el: '#app1',
+      data: {
+        blogarts: dataEl,
+        newblog: dataEl,
+        itemtag: ''
+      },
+      methods: {
+        sorttag(tag) {
+
+          return this.blogarts = this.newblog.filter(item => {
+            if (item.tags.includes(tag)) return item;
+
+          });
+        }
+      },
+
+    })
+
+
+  </script>
+
+  <div id="app"></div>
+
+
+</body>
+
+</html>
