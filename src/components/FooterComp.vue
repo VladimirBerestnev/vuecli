@@ -9,9 +9,9 @@
         <div class="footer__item footer__contacts">
             <h3 class="footer__item__heading">Pages</h3>
             <ul class="footer__item__list">
-                <li class="footer__item__list__li"><a href="index.html">Home</a></li>
-                <li class="footer__item__list__li"><a href="#">Project</a></li>
-                <li class="footer__item__list__li"><a href="#">Blog</a></li>
+                <li class="footer__item__list__li"><router-link to="/">Home</router-link></li>
+                <li class="footer__item__list__li"><router-link to="/project">Project</router-link></li>
+                <li class="footer__item__list__li"><router-link to="/blog">Blog</router-link></li>
             </ul>
         </div>
         <div class="footer__item footer__contacts">

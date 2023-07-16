@@ -3,9 +3,9 @@
         <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
                 <span class="header__title">Interno</span></a></div>
         <nav class="header__nav">
-            <a href="index.html" class="header__link">Home</a>
-            <a href="#" class="header__link">Project</a>
-            <a href="#" class="header__link">Blog</a>
+            <router-link to="/" class="header__link">Home</router-link>
+            <router-link to="/blog" class="header__link">Blog</router-link>
+            <router-link to="/project" class="header__link">Project</router-link>
         </nav>
     </header>
 </template>
