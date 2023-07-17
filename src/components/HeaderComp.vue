@@ -1,7 +1,7 @@
 <template>
     <header class="header center">
-        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">
-                <span class="header__title">Interno</span></a></div>
+        <div class="logo"><router-link to="/"><img src="img/logo.png" alt="logo">
+                <span class="header__title">Interno</span></router-link></div>
         <nav class="header__nav">
             <router-link to="/" class="header__link">Home</router-link>
             <router-link to="/blog" class="header__link">Blog</router-link>
