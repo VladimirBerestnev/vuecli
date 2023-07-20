@@ -4,8 +4,8 @@
             <div class="blogbanner__heading">
                 <h1 class="blogbanner__title">Our Project</h1>
                 <div class="blogbanner__breadcrumbs">
-                    <a href="index.html" class="blogbanner__breadcrumbs__link">Home</a>
-                    <a href="blog.html" class="blogbanner__breadcrumbs__link">Project</a>
+                    <router-link to="/" class="blogbanner__breadcrumbs__link">Home</router-link>
+                    <router-link to="/project" class="blogbanner__breadcrumbs__link">Project</router-link>
                 </div>
             </div>
         </section>

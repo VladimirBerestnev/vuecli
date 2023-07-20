@@ -16,7 +16,7 @@
                             <p class="projects__items_text">Decor / Artchitecture</p>
                         </div>
 
-                        <div class="projects_items_circle">
+                        <router-link to="/project" class="projects_items_circle">
                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="&#62;">
                                     <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
@@ -25,7 +25,7 @@
                                 </g>
                             </svg>
 
-                        </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="projects__items__block">
@@ -36,7 +36,7 @@
                             <p class="projects__items_text">Decor / Artchitecture</p>
                         </div>
 
-                        <div class="projects_items_circle">
+                        <router-link to="/project" class="projects_items_circle">
                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="&#62;">
                                     <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
@@ -45,7 +45,7 @@
                                 </g>
                             </svg>
 
-                        </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="projects__items__block">
@@ -56,7 +56,7 @@
                             <p class="projects__items_text">Decor / Artchitecture</p>
                         </div>
 
-                        <div class="projects_items_circle">
+                        <router-link to="/project" class="projects_items_circle">
                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="&#62;">
                                     <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
@@ -65,7 +65,7 @@
                                 </g>
                             </svg>
 
-                        </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="projects__items__block">
@@ -76,7 +76,7 @@
                             <p class="projects__items__text">Decor / Artchitecture</p>
                         </div>
 
-                        <div class="projects__circle">
+                        <router-link to="/project" class="projects__circle">
                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="&#62;">
                                     <circle id="Ellipse 4" cx="35" cy="35.0001" r="35" fill="#F4F0EC" />
@@ -85,7 +85,7 @@
                                 </g>
                             </svg>
 
-                        </div>
+                        </router-link>
                     </div>
                 </div>
 

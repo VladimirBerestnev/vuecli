@@ -6,12 +6,12 @@
                     <h1 class="started__block__h1">Let Your Home Be Unique</h1>
                     <p class="started__block__p">There are many variations of the passages of lorem Ipsum fromavailable,
                         majority.</p>
-                    <a href="#" class="started__block__link">Get Started <svg width="19" height="17" viewBox="0 0 19 17"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <router-link to="/" class="started__block__link">Get Started <svg width="19" height="17"
+                            viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887"
                                 stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </section>
