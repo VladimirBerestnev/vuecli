@@ -11,7 +11,7 @@
                 {{ getArticles }}
                 <div v-for="(item, index) in arrayArticles" :key="index">
                     <article class="news__box__item">
-                        <a :href="item.link" class="news__box__item__link">
+                        <router-link to="/blog" class="news__box__item__link">
                             <div class="news__box__item__imgbox">
                                 <img class="news__box__item__img" :src="item.img" alt="">
                                 <p class="news__box__item__desc">{{ item.desc }}</p>
@@ -31,7 +31,7 @@
 
                                 </div>
                             </div>
-                        </a>
+                        </router-link>
                     </article>
                 </div>
             </div>
