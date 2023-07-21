@@ -37,4 +37,12 @@ export default {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
+
+ul {
+  padding-left: 0rem;
+}
+
+img {
+  vertical-align: baseline;
+}
 </style>

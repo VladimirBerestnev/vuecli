@@ -1,6 +1,8 @@
 <template>
     <div class="details__article">
-        <h1 class="details__article__heading">{{ blogart.title }}</h1>
+        <router-link to="/projectdetails">
+            <h1 class="details__article__heading">{{ blogart.title }}</h1>
+        </router-link>
         <img :src="blogart.img" class="details__article__img" alt="">
         <div class="details__article__databox">
             <div class="details__article__databox__data">{{ blogart.datatime }} </div>
