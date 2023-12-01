@@ -1,0 +1,198 @@
+$siteWidth: 1200px;
+$colorHeading: #292F36;
+$colorParagraph: #4D5053;
+$goldColor: #CDA274;
+$colorHoverAndBG: #F4F0EC;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+a,
+li,
+label {
+    font-family: "Jost";
+    color: $colorParagraph;
+}
+
+span,
+h1,
+h2,
+h3 {
+    font-family: "DM Serif Display";
+}
+
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
+
+
+
+.news {
+
+    &__title {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 52px;
+
+
+        &__heading {
+            color: $colorHeading;
+            text-align: center;
+            font-size: 50px;
+            line-height: 125%;
+            letter-spacing: 1px;
+        }
+
+        &__blog {
+            color: $colorHeading;
+            font-size: 50px;
+            line-height: 125%;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            color: $colorParagraph;
+            text-align: center;
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+            max-width: 810px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 27px;
+
+        &__item:hover {
+            background-color: $colorHoverAndBG;
+        }
+
+        &__item:hover circle {
+            fill: #fff;
+        }
+
+        &__item {
+            width: 382px;
+            padding: 21px;
+            box-sizing: border-box;
+            border-radius: 62px;
+            border: 1px solid #E7E7E7;
+            box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+
+            &__imgbox {
+                position: relative;
+            }
+
+            &__img {
+                border-radius: 45px 45px 0px 0px;
+                width: 340px;
+                height: 289px;
+            }
+
+            &__desc {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: $colorParagraph;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.16px;
+                text-transform: capitalize;
+                width: 124px;
+                height: 41px;
+                background-color: #FFFFFF;
+                border-radius: 8px 8px 8px 0px;
+                padding-top: 8px;
+                padding-left: 11px;
+                box-sizing: border-box;
+
+            }
+
+            &__title {
+                color: $colorHeading;
+                font-size: 25px;
+                line-height: 125%;
+                letter-spacing: 0.5px;
+                width: 305px;
+                height: 94px;
+                margin-top: 21px;
+                margin-bottom: 30px;
+            }
+
+            &__databox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            &__databox__text {
+                color: $colorParagraph;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        margin-top: 51px;
+        margin-bottom: 200px;
+
+
+        &__item {
+            width: 52px;
+            height: 52px;
+            border-radius: 52px;
+            border: 1px solid $goldColor;
+            color: $colorHeading;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: capitalize;
+            padding: 13px;
+            box-sizing: border-box;
+        }
+
+        &__item:hover {
+            background-color: $colorHoverAndBG;
+        }
+    }
+}
+
+
+
+
+
+.blogbanner__details {
+    height: 356px;
+    background-image: url(img/blogbanner.jpg);
+    margin-bottom: 200px;
+}
